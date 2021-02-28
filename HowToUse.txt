@@ -1,24 +1,16 @@
-4
-2
-google.com
-5000
-1
-google.com
-5
-1
-192.168.8.101
-5
-1
-googlr.com.nvb
-5
+Bước 1: tải thư mục từ github
+Bước 2: giải nén folder và mở teminal 
+Bước 3: nhập lệnh sudo ./EasyPingProgram "a" "b" "c" "d" 
+a: loại lệnh test (a = 0 test bằng câu lệnh trực tiếp tại teminal; a = 1 test bằng bài unittest)
+	Áp dụng với a = 1 (
+		+ b là file TestCase.txt, hoặc đường dẫn đến file nếu file nằm ở folder khác
+		+ để trống c và d
+		+ ví dụ : sudo ./EasyPingProgram 1 TestCase.txt
+	
+	Áp dụng với a = 0 :
+		+ b là hostname hoặc ipv4 address
+		+ c = 0 => test mặc định, bỏ qua d , chỉ dừng khi nhấn "Ctrl + C"(VD: sudo ./EasyPingProgram 0 google.com 0)
+		+ c = 1 => test với số lượng d messages(VD: sudo ./EasyPingProgram 0 google.com 1 5)
+		+ c = 2 => test với thời gian là d milisecond (VD: sudo ./EasyPingProgram 0 google.com 2 10000)
 
-
-------------------------------------------------
-2 // testcases
-2 //type time
-google.com // hostname or ipv4 address
-5000	// time running
-1 // type number messages to sent
-google.com
-5 // number messages to sent	
 
